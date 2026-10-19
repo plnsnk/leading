@@ -1,0 +1,1054 @@
+header, footer {
+    background-color: #F4F1EC;
+}
+
+.nav-link {
+    text-transform: uppercase;
+}
+.a:hover {
+    color: #C9AFAF!important;
+}
+.text-1 {
+    font-family: hemico;
+    color: #4E0119;
+}
+.logo-header {
+    width: 6vw;
+    height: auto;
+}
+
+@media (max-width: 991px) {
+    .logo-header { width: 120px; }   /* планшет */
+}
+
+@media (max-width: 575px) {
+    .logo-header { width: 95px; }    /* телефон */
+}
+.navbar-nav {
+    align-items: center;
+}
+footer .text-hemico {
+    color: #4E0119;
+}
+
+@media (min-width: 992px) {
+    .container {
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+}
+.navbar .nav-link {
+    display: flex;
+    align-items: center;
+    line-height: 1;          /* убирает лишнюю высоту строки */
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+/* аватарка по центру строки, не растягивает пункт */
+.navbar .nav-link img {
+    display: block;
+    height: 50px;            /* фиксированная высота вместо 4vw */
+    width: auto;
+}
+.avatar-header {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+}
+/* бургер-кнопка — делаем заметной */
+/* бургер — бордовый с кремовыми полосками */
+.navbar .navbar-toggler {
+    border: 2px solid #4E0119;
+    border-radius: 8px;
+    background-color: #4E0119;
+    padding: 8px 12px;
+}
+
+.navbar .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23F4F1EC' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2.5' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0!important;
+}
+
+.nav-link {
+    color: #4E0119!important;
+    font-family: hemico;
+    font-size: 19px;
+}
+/* ===== футер ===== */
+.footer {
+    border-top: 3px solid #4E0119;
+}
+
+.footer-text {
+    font-family: sans, sans-serif;
+    color: #4E0119;
+    max-width: 320px;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.footer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-list li { margin-bottom: 8px; }
+
+.footer-list a {
+    font-family: sans, sans-serif;
+    color: #4E0119;
+    text-decoration: none;
+    transition: color .2s;
+    font-size: 19px;
+}
+
+.footer-list a:hover {
+    color: #1E2023;
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    background: #C9AFAF;
+    padding: 12px 0;
+    color: #4E0119;
+}
+
+/* футер прижат к низу на коротких страницах */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main { flex: 1; }
+
+/* ===== МОБИЛЬНЫЙ ФУТЕР ===== */
+@media (max-width: 767px) {
+    .footer {
+        text-align: center;
+    }
+
+    .footer .col-md-4 {
+        margin-bottom: 30px;
+    }
+
+    /* лого центрируем */
+    .footer .navbar-brand {
+        display: inline-block;
+        margin: 0 auto;
+    }
+
+    .footer .logo-header {
+        display: block;
+        margin: 0 auto 15px;
+    }
+
+    /* текст под лого центрируем */
+    .footer-text {
+        margin: 10px auto 0;
+        text-align: center;
+        max-width: 320px;
+    }
+
+    /* заголовки колонок центрируем */
+    .footer .text-hemico {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    /* списки центрируем */
+    .footer-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-list li {
+        text-align: center;
+    }
+
+    /* нижняя полоска тоже по центру */
+    .footer-bottom {
+        text-align: center;
+    }
+
+    /* последняя колонка без отступа снизу */
+    .footer .col-md-4:last-child {
+        margin-bottom: 0;
+    }
+}
+@font-face {
+    font-family: hemico;
+    src: url("/fonts/hemico.ttf");
+}
+.text-hemico {
+    font-family: hemico;
+    font-size: 22px;
+}
+@font-face {
+    font-family: czizh;
+    src: url("/fonts/czizh.ttf");
+}
+.text-czizh {
+    font-family: czizh;
+}
+@font-face {
+    font-family: deco;
+    src: url("/fonts/deco.ttf");
+}
+.text-deco {
+    font-family: deco;
+}
+@font-face {
+    font-family: sans;
+    src: url("/fonts/sans.ttf");
+}
+.text-sans {
+    font-family: sans;
+}
+
+@font-face {
+    font-family: text;
+    src: url("/fonts/text.ttf");
+}
+.text {
+    font-family: text;
+}
+
+@font-face {
+    font-family: zyablik;
+    src: url("/fonts/zyablik.ttf");
+}
+.text-zyablik {
+    font-family: zyablik;
+}
+
+/* главная */
+
+#banner {
+    background-image:
+        linear-gradient(to right, rgba(30, 0, 8, .55), rgba(30, 0, 8, .1) 55%, rgba(30, 0, 8, .45)),
+        url("/images/banner.jpg");
+    height: 92vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;                 /* вместо absolute — текст не поедет */
+    align-items: center;
+    justify-content: flex-end;     /* текст справа, как у тебя */
+}
+
+.banner-content {
+    max-width: 560px;
+    margin-right: 8%;
+    padding: 0 20px;
+    color: #F4F1EC;
+    animation: fadeUp 1s ease both;
+}
+
+.banner-sub {
+    font-family: hemico;
+    font-size: 15px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #C9AFAF;
+    margin-bottom: 16px;
+}
+
+.banner-text {
+    font-family: sans, sans-serif;
+    font-size: 34px;
+    line-height: 1.45;
+    text-shadow: 0 2px 14px rgba(0, 0, 0, .5);
+}
+
+.banner-btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 14px 36px;
+    border: 2px solid #F4F1EC;
+    color: #F4F1EC;
+    font-family: hemico;
+    font-size: 16px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: .25s;
+}
+
+.banner-btn:hover {
+    background: #F4F1EC;
+    color: #4E0119;
+}
+.working {
+    background: #F4F1EC;
+    padding: 80px 0 110px;          /* воздух сверху и особенно снизу */
+}
+
+.working .text-1 {
+    margin-bottom: 50px;
+}
+
+/* оба блока — одной высоты, текст по центру вертикали */
+.no-work,
+.work {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;        /* ← убирает дыру внизу левого блока */
+    min-height: 320px;
+    font-family: sans, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    box-shadow: 12px 12px 0 #C9AFAF;   /* фирменная жёсткая тень */
+}
+
+.no-work {
+    color: #4E0119;
+    border: 2px solid #4E0119;
+    background: #F4F1EC;
+}
+
+.work {
+    color: #F4F1EC;
+    background: #4E0119;
+    border: none;
+}
+
+/* маленькие надстрочники, как на баннере */
+.block-sub {
+    font-family: hemico;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 15px;
+    margin-bottom: 18px;
+}
+
+.no-work .block-sub { color: #4E0119; }
+.work .block-sub    { color: #C9AFAF; }
+
+/* финальная цепочка — отдельный акцент */
+.block-chain {
+    margin: 22px 0 0;
+    padding-top: 16px;
+    border-top: 1px solid #C9AFAF;
+    font-family: hemico;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+    color: #C9AFAF;
+}
+
+.work-arrow {
+    align-items: center;
+    justify-content: center;
+    font-size: 52px;
+    color: #4E0119;
+}
+/* ===== секция "Почему нас трое" ===== */
+.why-section {
+    background: #4E0119;
+    padding: 80px 0 110px;
+}
+
+.why-section .text-1 {
+    color: #F4F1EC;
+    margin-bottom: 30px;
+}
+
+.why-section .text-1::after {
+    background: #C9AFAF;
+}
+
+.why-intro {
+    font-family: sans, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: #F4F1EC;
+    margin-bottom: 60px;
+    line-height: 1.6;
+}
+
+/* карточки — кремовые на бордовом с жёсткой тенью */
+.why-card {
+    background: #F4F1EC;
+    border: 2px solid #4E0119;
+    box-shadow: 12px 12px 0 #C9AFAF;
+    padding: 35px 30px;
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+}
+
+.why-card-sub {
+    font-family: hemico;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #4E0119;
+    margin-bottom: 20px;
+    padding-bottom: 16px;
+    border-bottom: 2px solid #C9AFAF;
+}
+
+.why-card-text {
+    font-family: sans, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+    color: #1E2023;
+    margin: 0;
+}
+
+/* финальная строка — крупная, кремовая */
+.why-final {
+    margin-top: 70px;
+    text-align: center;
+    font-family: hemico;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 24px;
+    color: #F4F1EC;
+}
+@media (max-width: 991px) {
+    .no-work, .work {
+        margin: 0 0 25px;      /* было: 0 15px 30px */
+        min-height: 0;
+    }
+
+    .why-card {
+        margin: 0 0 25px;      /* было: 0 15px 30px */
+        min-height: 0;
+    }
+}
+/* ===== АДАПТИВ ГЛАВНОЙ ===== */
+
+/* большие экраны (1400px+) */
+@media (min-width: 1400px) {
+    .banner-content {
+        max-width: 650px;
+    }
+
+    .banner-text {
+        font-size: 38px;
+    }
+}
+
+/* планшеты (768-991px) */
+@media (max-width: 991px) {
+    #banner {
+        height: 80vh;
+        justify-content: center;
+    }
+
+    .banner-content {
+        margin-right: 0;
+        text-align: center;
+        max-width: 90%;
+    }
+
+    .banner-text {
+        font-size: 28px;
+    }
+
+    .banner-sub {
+        font-size: 13px;
+    }
+
+    .banner-btn {
+        padding: 12px 28px;
+        font-size: 14px;
+    }
+
+    /* секция "история" */
+    .working {
+        padding: 60px 15px 80px;
+    }
+
+    .working .text-1 {
+        font-size: 28px;
+        margin-bottom: 40px;
+    }
+
+    .no-work, .work {
+        min-height: 280px;
+        font-size: 16px;
+        box-shadow: 8px 8px 0 #C9AFAF;
+    }
+
+    .block-sub {
+        font-size: 13px;
+        letter-spacing: 3px;
+    }
+
+    .block-chain {
+        font-size: 12px;
+    }
+
+    .work-arrow {
+        display: none; /* скрываем стрелку на планшетах */
+    }
+
+    /* секция "почему трое" */
+    .why-section {
+        padding: 60px 15px 80px;
+    }
+
+    .why-section .text-1 {
+        font-size: 28px;
+    }
+
+    .why-intro {
+        font-size: 17px;
+        margin-bottom: 40px;
+    }
+
+    .why-card {
+        padding: 28px 24px;
+        min-height: 200px;
+        box-shadow: 8px 8px 0 #C9AFAF;
+    }
+
+    .why-card-sub {
+        font-size: 13px;
+    }
+
+    .why-card-text {
+        font-size: 15px;
+    }
+
+    .why-final {
+        font-size: 20px;
+        margin-top: 50px;
+    }
+}
+
+/* телефоны */
+@media (max-width: 767px) {
+    #banner {
+        height: 75vh;
+        min-height: 500px;
+        justify-content: center;
+    }
+
+    .banner-content {
+        margin-right: 0;
+        text-align: center;
+        padding: 0 15px;
+    }
+
+    .banner-sub {
+        font-size: 12px;
+        letter-spacing: 4px;
+        margin-bottom: 12px;
+    }
+
+    .banner-text {
+        font-size: 22px;
+        line-height: 1.4;
+    }
+
+    .banner-btn {
+        margin-top: 24px;
+        padding: 12px 24px;
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+
+    /* секция "история" */
+    .working {
+        padding: 50px 15px 70px;
+    }
+
+    .working .text-1 {
+        font-size: 22px;
+        letter-spacing: 2px;
+        margin-bottom: 30px;
+    }
+
+    .working .container {
+        padding: 0 15px;
+    }
+
+    .no-work, .work {
+        margin-bottom: 25px;
+        min-height: auto;
+        padding: 25px 20px;
+        font-size: 15px;
+        box-shadow: 6px 6px 0 #C9AFAF;
+    }
+
+    .block-sub {
+        font-size: 12px;
+        letter-spacing: 3px;
+        margin-bottom: 14px;
+    }
+
+    .block-text {
+        line-height: 1.5;
+    }
+
+    .block-chain {
+        font-size: 11px;
+        letter-spacing: 1px;
+        margin-top: 16px;
+        padding-top: 12px;
+    }
+
+    /* секция "почему трое" */
+    .why-section {
+        padding: 50px 15px 70px;
+    }
+
+    .why-section .text-1 {
+        font-size: 22px;
+        letter-spacing: 2px;
+        margin-bottom: 20px;
+    }
+
+    .why-intro {
+        font-size: 15px;
+        margin-bottom: 35px;
+        line-height: 1.5;
+    }
+
+    .why-card {
+        margin-bottom: 25px;
+        padding: 25px 20px;
+        min-height: auto;
+        box-shadow: 6px 6px 0 #C9AFAF;
+    }
+
+    .why-card-sub {
+        font-size: 12px;
+        letter-spacing: 3px;
+        margin-bottom: 16px;
+        padding-bottom: 12px;
+    }
+
+    .why-card-text {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .why-final {
+        font-size: 16px;
+        letter-spacing: 2px;
+        margin-top: 40px;
+        line-height: 1.5;
+    }
+}
+
+/* очень маленькие экраны (375px и меньше) */
+@media (max-width: 374px) {
+    .banner-text {
+        font-size: 19px;
+    }
+
+    .working .text-1,
+    .why-section .text-1 {
+        font-size: 19px;
+    }
+
+    .no-work, .work,
+    .why-card {
+        padding: 20px 16px;
+    }
+}
+/* телефон */
+@media (max-width: 991px) {
+    .why-card {
+        margin: 0 15px 30px;
+        min-height: 0;
+    }
+
+    .why-final {
+        font-size: 18px;
+    }
+}
+/* телефон: блоки в столбик, стрелка вниз */
+@media (max-width: 991px) {
+    .no-work, .work {
+        margin: 0 15px 30px;
+        min-height: 0;
+    }
+}
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* телефон */
+@media (max-width: 768px) {
+    #banner { justify-content: center; }
+    .banner-content { margin-right: 0; text-align: center; }
+    .banner-text { font-size: 24px; }
+}
+/* form */
+.register-login {
+    background:
+        repeating-linear-gradient(45deg, rgba(244, 241, 236, .05) 0 2px, transparent 2px 16px),
+        #4E0119;
+    padding: 80px 15px;
+}
+
+.form {
+    background: #F4F1EC;
+    padding: 50px 45px;
+    border: none;
+    max-width: 700px !important;
+    margin: 0 auto;
+}
+
+.text-1 {
+    font-family: hemico;
+    color: #4E0119;
+    letter-spacing: 3px;
+    font-size: 35px;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 16px;
+    margin-bottom: 32px;
+}
+
+.text-1::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;                 /* тонкая линия на всю ширину, как линейка */
+    height: 2px;
+    background: #C9AFAF;
+}
+
+.label-form {
+    font-family: sans, sans-serif;
+    color: #4E0119;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 6px !important;
+}
+
+.form-input {
+
+    padding: 12px 16px;
+    width: 100%;
+    border-radius: 0;
+    color: #1E2023;
+    font-family: sans, sans-serif;
+    font-size: 16px;
+    outline: none;
+    transition: box-shadow .2s;
+    box-sizing: border-box;
+    background: #ffffff;
+    border: 1.5px solid #4E0119;
+}
+
+.form-input::placeholder { color: #b9a3a3; }
+
+.form-input:focus {
+    box-shadow: 4px 4px 0 #C9AFAF;   /* фокус в том же «полиграфическом» стиле */
+}
+
+/* кнопка — родная сестра кнопки с баннера */
+.form-button {
+    width: 100%;
+    padding: 14px 20px;
+    border: 2px solid #4E0119;
+    border-radius: 0;
+    font-family: hemico;
+    font-size: 17px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .25s;
+    margin-top: 12px;
+    background: #4E0119;
+    color: #F4F1EC;
+    border: 2px solid #4E0119;
+}
+
+.form-button:hover {
+    background: #6d0b26;
+    border-color: #6d0b26;
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0 #C9AFAF;
+}
+
+.form hr {
+    border: none;
+    height: 1px;
+    background: #C9AFAF;
+    opacity: 1;
+    margin: 28px 0 16px;
+}
+
+.form a {
+    color: #4E0119 !important;
+    font-weight: 700;
+    text-decoration: none;
+    border-bottom: 1px solid #C9AFAF;
+}
+/* forms*/
+/* чекбоксы формата — в стиле сайта */
+.format-checks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 28px;
+    padding: 6px 0;
+}
+/* ===== АДАПТИВ ФОРМ ===== */
+
+/* планшеты */
+@media (max-width: 991px) {
+    .form {
+        padding: 40px 30px;
+    }
+
+    .form-anketa {
+        max-width: 100% !important;
+    }
+}
+
+/* телефоны */
+@media (max-width: 767px) {
+    .register-login {
+        padding: 40px 10px;
+    }
+
+    .form {
+        padding: 35px 18px;
+    }
+
+    .form .text-1 {
+        font-size: 22px;
+        letter-spacing: 2px;
+    }
+
+    .label-form {
+        font-size: 14px;
+    }
+
+    .form-input {
+        padding: 10px 12px;
+        font-size: 15px;
+    }
+
+    .form-button {
+        padding: 12px 16px;
+        font-size: 15px;
+        letter-spacing: 2px;
+    }
+
+    /* чекбоксы в столбик */
+    .format-checks {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    /* анкета */
+    .anketa-intro {
+        font-size: 15px;
+        margin-bottom: 25px;
+    }
+
+    .anketa-block {
+        padding-top: 22px;
+        margin-top: 30px;
+    }
+
+    .anketa-block-title {
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+}
+/* планшеты */
+@media (max-width: 991px) {
+    .no-work, .work, .why-card {
+        margin: 0 0 30px;      /* было: 0 15px 30px */
+        min-height: 0;
+    }
+
+    .working .container,
+    .why-section .container {
+        padding-left: 20px;    /* побольше воздуха от краёв экрана */
+        padding-right: 20px;
+    }
+
+    .work-arrow { display: none; }
+}
+
+/* телефоны */
+@media (max-width: 767px) {
+    .no-work, .work, .why-card {
+        margin: 0 0 25px;      /* было: 0 15px 25px */
+    }
+
+    .working .container,
+    .why-section .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+/* страховка от горизонтального сдвига */
+body {
+    overflow-x: hidden;
+}
+/* ===== АДАПТИВ КАБИНЕТА ===== */
+@media (max-width: 767px) {
+    .cab-card {
+        padding: 20px 16px;
+        box-shadow: 6px 6px 0 #C9AFAF;
+    }
+
+    .cab-card-head {
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .cab-event {
+        font-size: 15px;
+    }
+
+    /* таблица ведущего — мельче и со скроллом */
+    .cab-table th, .cab-table td {
+        padding: 8px 10px;
+        font-size: 13px;
+        white-space: nowrap;
+    }
+}
+.check-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: sans, sans-serif;
+    font-size: 16px;
+    color: #1E2023;
+    cursor: pointer;
+}
+
+.check-item input {
+    width: 18px;
+    height: 18px;
+    accent-color: #4E0119;   /* квадратик становится бордовым */
+    cursor: pointer;
+}
+
+textarea.form-input { resize: vertical; min-height: 110px; }
+select.form-input     { cursor: pointer; }
+.form-anketa { max-width: 900px !important; }
+
+.anketa-intro {
+    font-family: sans, sans-serif;
+    text-align: center;
+    color: #1E2023;
+    margin-bottom: 40px;
+}
+
+.anketa-block {
+    border-top: 2px solid #C9AFAF;
+    padding-top: 30px;
+    margin-top: 45px;
+}
+
+.anketa-block-title {
+    font-family: hemico;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 20px;
+    color: #4E0119;
+    margin-bottom: 25px;
+}
+
+.req { color: #4E0119; }
+/* карточки кабинета */
+.cab-card {
+    background: #F4F1EC;
+    border: 2px solid #4E0119;
+    padding: 25px 30px;
+    margin-bottom: 35px;
+    font-family: sans, sans-serif;
+    color: #1E2023;
+}
+
+.cab-card-head {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #C9AFAF;
+    padding-bottom: 12px;
+    margin-bottom: 14px;
+    color: #4E0119;
+}
+
+.cab-event {
+    font-family: hemico;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #4E0119;
+}
+
+.cab-line { margin: 4px 0; }
+
+.cab-link {
+    color: #4E0119 !important;
+    font-weight: 700;
+    text-decoration: none;
+    border-bottom: 1px solid #C9AFAF;
+}
+
+.cab-empty { font-family: sans, sans-serif; color: #F4F1EC; margin-bottom: 40px; }
+.cab-empty a { color: #F4F1EC; font-weight: 700; border-bottom: 1px solid #C9AFAF; }
+
+/* таблица ведущего */
+.cab-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: sans, sans-serif;
+    background: #F4F1EC;
+    box-shadow: 10px 10px 0 #C9AFAF;
+}
+
+.cab-table th, .cab-table td {
+    border: 1px solid #C9AFAF;
+    padding: 10px 14px;
+    text-align: left;
+    color: #1E2023;
+}
+
+.cab-table th {
+    background: #4E0119;
+    color: #F4F1EC;
+    font-family: hemico;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.cab-table a { color: #4E0119; font-weight: 700; }
+
+/* просмотр анкеты */
+.show-q {
+    font-family: hemico;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #4E0119;
+    margin-bottom: 6px;
+}
+
+.show-a {
+    font-family: sans, sans-serif;
+    color: #1E2023;
+    border-left: 3px solid #C9AFAF;
+    padding-left: 14px;
+    margin-bottom: 22px;
+    white-space: pre-line;
+}
